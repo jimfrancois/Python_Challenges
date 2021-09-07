@@ -459,7 +459,7 @@ if guess == number:
 elif guess > number:
     print("Too high")
     guess = int(input("Guess again: "))
-    
+
     if guess == number:
         print("Incorrect")
 
@@ -473,3 +473,14 @@ elif guess < number:
         print("Incorrect")
 else: 
     print("Youl ose") 
+
+
+
+#Challenge56
+num = random.randint(1, 10)
+correct = False 
+
+while correct == False:
+    guess = int(input("Enter a number: "))
+    if guess == num:
+        correct = True
