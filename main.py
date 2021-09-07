@@ -140,4 +140,10 @@ elif num == "2":
 elif num == "3":
     print("Correct") 
 else:
-    print("Error message")     
+    print("Error message")   
+
+
+#Challenge20
+name = input("Enter your first name: ")
+length = len(name)
+print(length)      
