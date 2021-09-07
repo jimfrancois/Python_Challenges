@@ -265,4 +265,9 @@ name = input("Type your name: ")
 for x in range(0, 3):
     print(name) 
 
-                    
+
+#Challenge36
+name = input("Type your name: ")
+number = int(input("Enter a number: "))
+for i in range(0, number):
+    print(name)              
