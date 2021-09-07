@@ -155,3 +155,11 @@ name = firstname + " " + surname
 length = len(name)
 print(name)
 print(length)
+
+#Challenge22
+firstname = input("Enter your first name in lowercase: ")
+surname = input("Enter your surname in lowercase: ")
+firstname = firstname.title()
+surname = surname.title()
+name = firstname + " " + surname
+print(name)
