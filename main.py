@@ -16,3 +16,10 @@ print('What do you call a bear with no teeth?\n A gummy bear!')
 num1 = int(input('Please enter a number: '))
 num2 = int(input('Please enter a second number: '))
 print('The total is', num1 + num2)
+
+#Challenge05
+num1 = int(input('Please enter a number: '))
+num2 = int(input('Please enter a second number: '))
+num3 = int(input('Please enter a third number: '))
+sum = (num1 + num2) * num3
+print('The answer is', sum)
