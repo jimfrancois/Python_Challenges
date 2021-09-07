@@ -271,3 +271,11 @@ name = input("Type your name: ")
 number = int(input("Enter a number: "))
 for i in range(0, number):
     print(name)              
+
+
+#Challenge37
+name = input("Enter your name: ")
+for i in name:
+    print(i)   
+    
+     
