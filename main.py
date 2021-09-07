@@ -516,4 +516,33 @@ for i in range(1, 6):
     print() 
     if answer == correct:
         score = score + 1
-print("You scored", score, "out of 5")        
+print("You scored", score, "out of 5")  
+
+#Challenge59
+Colour = random.choice(["red", "blue", "green", "white", "pink"])
+print("Select from red, blue, green, white or pink")
+tryAgain = True
+
+while tryAgain == True:
+    theirchoice = input("Enter a colour: ")
+    theirchoice = theirchoice.lower()
+
+    if colour == theirchoice:
+        print("Well done")
+        tryAgain = False
+
+    else:
+        if colour == "red":
+            print("I bet you are seeing RED right now!")
+
+        elif colour == "blue":
+            print("Don't feel BLUE.")
+
+        elif colour == "green":
+                print("I bet you are GREEN with envy right now.") 
+
+        elif colour == "white": 
+            print("Are you WHITE as a sheet, as you didn't guess correctly?") 
+            
+        elif colour == "pink": 
+            print("Shame you arenot feeling in the PINK,as you got it wrong!") 
