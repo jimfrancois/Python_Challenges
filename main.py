@@ -213,3 +213,7 @@ print(round(answer, 2))
 num = int(input("Enter a number over 500: "))
 answer = math.sqrt(num)
 print(round(answer, 2))
+
+#Challenge30
+print(round(math.pi, 5))
+
