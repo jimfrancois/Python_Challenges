@@ -543,6 +543,16 @@ while tryAgain == True:
 
         elif colour == "white": 
             print("Are you WHITE as a sheet, as you didn't guess correctly?") 
-            
+
         elif colour == "pink": 
             print("Shame you arenot feeling in the PINK,as you got it wrong!") 
+
+
+#Challenge60
+import turtle
+
+for x in range(0, 4):
+    turtle.forward(100)
+    turtle.right(90)
+
+turtle.exitonclick()             
