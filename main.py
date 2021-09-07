@@ -23,3 +23,9 @@ num2 = int(input('Please enter a second number: '))
 num3 = int(input('Please enter a third number: '))
 sum = (num1 + num2) * num3
 print('The answer is', sum)
+
+#Challenge06
+slices_of_pizza = int(input('Enter the number of slices of pizza you started with: '))
+slice_eaten = int(input("How many slices have you eaten: "))
+slicesLeft = slices_of_pizza - slice_eaten
+print('You have', slicesLeft, "Slices remaining.")
