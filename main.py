@@ -217,3 +217,8 @@ print(round(answer, 2))
 #Challenge30
 print(round(math.pi, 5))
 
+
+#Challenge31
+radius = int(input("Enter the radius of the circle: "))
+area = math.pi * (radius ** 2)
+print(area)
