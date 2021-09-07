@@ -163,3 +163,12 @@ firstname = firstname.title()
 surname = surname.title()
 name = firstname + " " + surname
 print(name)
+
+#Challenge23
+phrase = input("Enter the first line of a nursery rhyme: ")
+length = len(phrase)
+print("This has", length, "letters in it")
+start = int(input("ERnter a starting number: "))
+end = int(input("ERnter a end number: "))
+part = (phrase[start:end])
+print(part)
