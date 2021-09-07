@@ -63,3 +63,12 @@ larger = int(input("Enter a number over 100: "))
 smaller = int(input("Enter a number under 10: "))
 answer = larger // smaller
 print(smaller, "goes into", larger, answer, "times")
+
+#Challenge12
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+
+if num1 > num2:
+    print(num2, num1)
+else:
+    print(num1, num2) 
