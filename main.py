@@ -222,3 +222,10 @@ print(round(math.pi, 5))
 radius = int(input("Enter the radius of the circle: "))
 area = math.pi * (radius ** 2)
 print(area)
+
+#Challenge32
+radius = int(input("Enter the radius of the circle: "))
+depth = int(input("Enter depth: "))
+area = math.pi * (radius ** 2)
+volume = area * depth
+print(round(volume, 3))
