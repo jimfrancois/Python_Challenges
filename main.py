@@ -424,6 +424,10 @@ while num > 0:
 print("There are no more green bottles hanging on the wall.") 
 
 
+#Challenge52
+number = random.randint(1,100)
+print(number)
+
 
 
 
