@@ -343,7 +343,12 @@ if num < 10:
 else:
     print("Too many people") 
 
-
+#Challenge45
+total = 0
+while total <= 50:
+    number = int(input("Enter a number: "))
+    total = total + number
+print("The total is", total) 
 
 
 
