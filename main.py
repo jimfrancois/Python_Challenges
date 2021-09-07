@@ -172,3 +172,8 @@ start = int(input("ERnter a starting number: "))
 end = int(input("ERnter a end number: "))
 part = (phrase[start:end])
 print(part)
+
+#Challenge24
+word = input("Enter a word: ")
+word = word.upper()
+print(word)
