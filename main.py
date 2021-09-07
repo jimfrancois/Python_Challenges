@@ -357,3 +357,12 @@ while number <= 5:
 print("The last number you entered was a", number) 
 
 
+#Challenge47
+num1 = int(input("Enter a number: "))
+total = num1
+again = "y"
+while again == "y":
+    num2 = int(input("Enter another number: "))
+    total = total + num2
+    again = input("Do you want to add another number? (y/n) ")
+print("The total is ", total)
