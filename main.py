@@ -23,3 +23,52 @@ num2 = int(input('Please enter a second number: '))
 num3 = int(input('Please enter a third number: '))
 sum = (num1 + num2) * num3
 print('The answer is', sum)
+
+#Challenge06
+slices_of_pizza = int(input('Enter the number of slices of pizza you started with: '))
+slice_eaten = int(input("How many slices have you eaten: "))
+slicesLeft = slices_of_pizza - slice_eaten
+print('You have', slicesLeft, "Slices remaining.")
+
+#Challenge07
+name = input('What is your name: ')
+age = int(input('How old are you: '))
+newAge = age + 1
+print(name, 'next birthday you will be', newAge)
+
+#Challenge08
+bill = int(input('what is the total cost of the bill?: '))
+people = int(input('How many people are there?: ' ))
+each = bill / people
+print("Each person should pay $", each)
+
+#Challenge09
+days = int(input('Enter the number of days: '))
+hours = days * 24
+minutes = hours * 60
+seconds = minutes * 60
+
+print("In", days, "days there are...")
+print(hours, "hours")
+print(minutes, "minutes")
+print(seconds, "seconds")
+
+#Challenge10
+kilo = int(input("Enter the number of kilos: "))
+pound = kilo * 2.204
+print("That is", pound, "pounds")
+
+#Challenge11
+larger = int(input("Enter a number over 100: "))
+smaller = int(input("Enter a number under 10: "))
+answer = larger // smaller
+print(smaller, "goes into", larger, answer, "times")
+
+#Challenge12
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+
+if num1 > num2:
+    print(num2, num1)
+else:
+    print(num1, num2) 
