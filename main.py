@@ -198,3 +198,7 @@ if first != "a" and first != "e" and first != "i" and first != "u":
 else:
     newword = word + "way"
     print(newword.lower()) 
+
+#Challenge27
+num = float(input("Enter a number with lots of decimal places: "))
+print(num * 2)    
