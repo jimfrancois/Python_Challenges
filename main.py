@@ -229,3 +229,11 @@ depth = int(input("Enter depth: "))
 area = math.pi * (radius ** 2)
 volume = area * depth
 print(round(volume, 3))
+
+#Challenge33
+num1 = int(input("Enter a number: "))
+num2 = int(input("Enter another number: "))
+
+ans1 = num1 // num2
+ans2 = num1 % num2
+print(num1, "divided by", num2, "is", ans1, "with", ans2, "remainng.")
