@@ -177,3 +177,12 @@ print(part)
 word = input("Enter a word: ")
 word = word.upper()
 print(word)
+
+#Challenge25
+name = input("Enter your first name: ")
+if len(name) < 5:
+    surname = input("Enter your surname: ")
+    name = name + surname
+    print(name.upper())
+else:
+    print(name.lower())
