@@ -52,3 +52,8 @@ print("In", days, "days there are...")
 print(hours, "hours")
 print(minutes, "minutes")
 print(seconds, "seconds")
+
+#Challenge10
+kilo = int(input("Enter the number of kilos: "))
+pound = kilo * 2.204
+print("That is", pound, "pounds")
