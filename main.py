@@ -202,3 +202,9 @@ else:
 #Challenge27
 num = float(input("Enter a number with lots of decimal places: "))
 print(num * 2)    
+
+#Challenge28
+num = float(input("Enter a number with lots of decimal places: "))
+answer = num * 2
+print(answer)
+print(round(answer, 2))
