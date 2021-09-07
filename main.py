@@ -298,3 +298,13 @@ for i in range(1, 13):
 num = int(input("Enter a number below 50: "))
 for i in range(50, num-1, -1):
     print(i)    
+
+#Challenge41
+name = input("Enter your name: ")
+num = int(input("Enter a number: "))
+if num < 10:
+    for i in range(0, num):
+        print(name)
+else:
+    for i in range(0, 3):
+        print("Too high")     
