@@ -85,4 +85,11 @@ num = int(input("Enter a value between 10 and 20: "))
 if num >= 10 and num <= 20:
     print("Thank you")
 else:
-    print("Incorrect answer")    
+    print("Incorrect answer")   
+
+#Challenge15
+colour = input("Type in your favourite colour: ")
+if colour == "red" or colour == "RED" or colour == "Red":
+    print("I like red too")
+else:
+    print("I don't like that colour, I prefer red")      
