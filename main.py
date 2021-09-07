@@ -11,3 +11,8 @@ print('Hello', fname, surname)
 
 #Challenge03
 print('What do you call a bear with no teeth?\n A gummy bear!')
+
+#Challenge04
+num1 = int(input('Please enter a number: '))
+num2 = int(input('Please enter a second number: '))
+print('The total is', num1 + num2)
