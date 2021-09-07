@@ -29,3 +29,9 @@ slices_of_pizza = int(input('Enter the number of slices of pizza you started wit
 slice_eaten = int(input("How many slices have you eaten: "))
 slicesLeft = slices_of_pizza - slice_eaten
 print('You have', slicesLeft, "Slices remaining.")
+
+#Challenge07
+name = input('What is your name: ')
+age = int(input('How old are you: '))
+newAge = age + 1
+print(name, 'next birthday you will be', newAge)
