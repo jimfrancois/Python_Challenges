@@ -1,4 +1,5 @@
 import math
+import random
 
 #Challenge01
 fname = input("What is your first name? ")
@@ -177,3 +178,133 @@ print(part)
 word = input("Enter a word: ")
 word = word.upper()
 print(word)
+
+#Challenge25
+name = input("Enter your first name: ")
+if len(name) < 5:
+    surname = input("Enter your surname: ")
+    name = name + surname
+    print(name.upper())
+else:
+    print(name.lower())
+
+
+#Challenge26
+word = input("Please enter a word: ")
+first = word[0]
+length = len(word)
+rest = word[1:length]
+if first != "a" and first != "e" and first != "i" and first != "u":
+    newword = rest + first + "ay"
+else:
+    newword = word + "way"
+    print(newword.lower()) 
+
+#Challenge27
+num = float(input("Enter a number with lots of decimal places: "))
+print(num * 2)    
+
+#Challenge28
+num = float(input("Enter a number with lots of decimal places: "))
+answer = num * 2
+print(answer)
+print(round(answer, 2))
+
+#Challenge29
+num = int(input("Enter a number over 500: "))
+answer = math.sqrt(num)
+print(round(answer, 2))
+
+#Challenge30
+print(round(math.pi, 5))
+
+
+#Challenge31
+radius = int(input("Enter the radius of the circle: "))
+area = math.pi * (radius ** 2)
+print(area)
+
+#Challenge32
+radius = int(input("Enter the radius of the circle: "))
+depth = int(input("Enter depth: "))
+area = math.pi * (radius ** 2)
+volume = area * depth
+print(round(volume, 3))
+
+#Challenge33
+num1 = int(input("Enter a number: "))
+num2 = int(input("Enter another number: "))
+
+ans1 = num1 // num2
+ans2 = num1 % num2
+print(num1, "divided by", num2, "is", ans1, "with", ans2, "remainng.")
+
+
+#Challenge34
+print('1 Square')
+print('2 Triangle')
+print()
+menuselection = int(input("Enter a number: "))
+if menuselection == 1:
+    side = int(input("Enter the length of one side: "))
+    area = side * side
+    print("The area of your chosen shape is", area)
+
+elif menuselection == 2:
+    base = int(input("Enter the length of the base: ")) 
+    height = int(input("Enter the height of the triangle: "))
+    area = (base * height) / 2
+    print("The area of your chosen shape is", area)
+
+else:
+    print("Incorrect option selected")
+
+
+#Challenge35
+name = input("Type your name: ")
+for x in range(0, 3):
+    print(name) 
+
+
+#Challenge36
+name = input("Type your name: ")
+number = int(input("Enter a number: "))
+for i in range(0, number):
+    print(name)              
+
+
+#Challenge37
+name = input("Enter your name: ")
+for i in name:
+    print(i)   
+    
+
+#Challenge38
+num = int(input("Enter a number: "))
+name = input("Enter your name: ")
+for x in range(0, num):
+    for i in name:
+        print(i)     
+
+
+#Challenge39
+num = int(input("Enter a number between 1 and 12: "))
+for i in range(1, 13):
+    answer = i * num
+    print(i, "x", num, "=", answer)
+
+
+#Challenge40
+num = int(input("Enter a number below 50: "))
+for i in range(50, num-1, -1):
+    print(i)    
+
+#Challenge41
+name = input("Enter your name: ")
+num = int(input("Enter a number: "))
+if num < 10:
+    for i in range(0, num):
+        print(name)
+else:
+    for i in range(0, 3):
+        print("Too high")     
