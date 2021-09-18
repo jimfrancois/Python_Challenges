@@ -879,3 +879,9 @@ print("That has", len(sname), "characters in it")
 name = fname + " " + sname
 print("Your full name is", name)
 print("That has", len(name), "characters in it")
+
+#Challenge81
+
+subject = input("Enter your favourite school subject: ")
+for letter in subject:
+    print(letter, end="-")
