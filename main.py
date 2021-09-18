@@ -693,3 +693,17 @@ for x in range(0, 10):
 turtle.hideturtle()
 
 turtle.exitonclick()
+
+#Challenge68
+import turtle
+import random
+
+lines = random.randint(5, 20)
+
+for x in range(0, lines):
+    turtle.random.randint(25, 100)
+    rotate = random.randint(1, 365)
+    turtle.forward(length)
+    turtle.right(rotate)
+
+turtle.exitonclick()
