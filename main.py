@@ -834,3 +834,23 @@ stillcome = input("Do you still want them to come (y/n): ")
 if stillcome == "n":
     party.remove(selection)
 print(party) 
+
+
+#Challenge78
+tv = ["Task Master", "Top Gear", "The Big Bang Theory", "How I Met Your Mother"]
+
+for i in tv:
+    print(i)
+
+print()
+newtv = input("Enter another TV show: ") 
+
+position = int(input("Enter a number between 0 and 3: "))
+tv.insert(position, newtv)
+
+for i in tv:
+    print (i)
+
+
+
+
