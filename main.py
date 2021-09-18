@@ -434,5 +434,17 @@ fruit = random.choice(["apple", "orange", "grape", "banana", "strawberry", ""])
 print(fruit)
 
 
+#Challenge54
+coin = random.choice(['h', 't'])
+usr = input("Enter (h)eads or (t)ails): ")
 
+if usr == coin:
+    print("You win")
+else:
+    print("Bad luck")
+    
+if coin == "h":
+    print("It was heads")
+else:
+    print("It was tails")
 
