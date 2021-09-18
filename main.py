@@ -391,3 +391,17 @@ while usr != compnum:
     count = count + 1
     usr = int(input("Have another guess: "))
 print("Well done, you took", count, "attempts")
+
+
+
+#Challenge50
+numbr = int(input("Enter a number between 10 and 20: "))
+while numbr < 10 or numbr > 20:
+    if numbr < 10:
+        print("Too low")
+    else:
+        print("Too high")
+    numbr = int(input("Try again: "))
+print("Thank you") 
+
+
