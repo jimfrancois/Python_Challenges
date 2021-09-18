@@ -774,3 +774,17 @@ end = int(input("Enter an end number (5-9): "))
 
 print(colours[start:end])
 
+
+#Challenge75
+
+nums = [123, 345, 234, 765]
+
+for i in nums:
+    print(i)
+selection = int(input("Enter a number from the list: ")) 
+
+if selection in nums:
+    print(selection, "is in position", nums.index(selection))
+
+else:
+    print("That is not in the list")
