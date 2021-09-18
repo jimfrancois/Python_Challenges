@@ -728,3 +728,10 @@ print()
 num = int(input("Enter a number between 0 and 4: "))
 
 print(country_tuple[num])
+
+#Challenge71
+sports_list = ["tennis", "footbal"]
+
+sports_list.append(input("What is your favourite sport? "))
+sports_list.sort()
+print(sports_list)
