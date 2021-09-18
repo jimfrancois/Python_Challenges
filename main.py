@@ -429,6 +429,10 @@ number = random.randint(1,100)
 print(number)
 
 
+#Challenge53
+fruit = random.choice(["apple", "orange", "grape", "banana", "strawberry", ""])
+print(fruit)
+
 
 
 
