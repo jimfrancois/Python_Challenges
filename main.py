@@ -852,5 +852,19 @@ for i in tv:
     print (i)
 
 
+#Challenge79
+num = []
+count = 0
+while count < 3 :
+    nums = int(input("Enter a number: "))
+    num.append(nums)
+    print(num)
+    count = count + 1
+
+lastnum = input("Do you want the last number saved (y/n): ") 
+
+if lastnum == "n":
+    num.remove(nums)
+print(num) 
 
 
