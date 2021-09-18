@@ -614,3 +614,12 @@ for x in range(0, 4):
 turtle.end_fill()
 
 turtle.exitonclick() 
+
+#Challenge64
+import turtle
+
+for i in range(0, 5):
+    turtle.forward(100)
+    turtle.right(144)
+
+turtle.exitonclick() 
