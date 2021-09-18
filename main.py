@@ -896,3 +896,17 @@ start = int(input("Enter a starting number: "))
 end = int(input("Enter a end number: "))
 print(poem[start:end])   
 
+
+#Challenge83
+
+msg = input("Enter a message in uppercase: ")
+tryagain = False
+
+while tryagain == False:
+    if msg.isupper():
+        print("Thank you")
+    tryagain = True
+
+else:
+    print("Try again")
+    msg = input("Enter a message in uppercase: ") 
