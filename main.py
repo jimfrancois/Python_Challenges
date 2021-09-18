@@ -910,3 +910,9 @@ while tryagain == False:
 else:
     print("Try again")
     msg = input("Enter a message in uppercase: ") 
+
+
+#Challenge84
+postcode = input("Enter your postcode: ")
+start = postcode[0:2]
+print(start.upper())    
