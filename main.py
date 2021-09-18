@@ -707,3 +707,12 @@ for x in range(0, lines):
     turtle.right(rotate)
 
 turtle.exitonclick()
+
+#Challenge69
+
+country_tuple = ("Haiti", "R. Dominicaine", "Porto-Rico", "USA")
+print(country_tuple)
+
+print()
+country = input("Please enter one of the countries from above: ")
+print(country, "has index number", country_tuple.index(country))
