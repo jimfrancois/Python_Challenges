@@ -1,5 +1,6 @@
 import math
 import random
+from typing import Pattern
 
 #Challenge01
 fname = input("What is your first name? ")
@@ -555,4 +556,15 @@ for x in range(0, 4):
     turtle.forward(100)
     turtle.right(90)
 
-turtle.exitonclick()             
+turtle.exitonclick()   
+
+#Challenge61
+import turtle
+
+for i in range(0, 3):
+    turtle.forward(100)
+    turtle.left(120)
+
+turtle.exitonclick() 
+
+
