@@ -885,3 +885,14 @@ print("That has", len(name), "characters in it")
 subject = input("Enter your favourite school subject: ")
 for letter in subject:
     print(letter, end="-")
+
+
+#Challenge82
+
+poem = "Oh, I wish I'd looked after me theeth,"
+print(poem)
+
+start = int(input("Enter a starting number: "))
+end = int(input("Enter a end number: "))
+print(poem[start:end])   
+
