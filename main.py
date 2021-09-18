@@ -442,9 +442,34 @@ if usr == coin:
     print("You win")
 else:
     print("Bad luck")
-    
+
 if coin == "h":
     print("It was heads")
 else:
     print("It was tails")
 
+
+#Challenge55
+number = random.randint(1,5) 
+guess = int(input("Enter a number: "))
+
+if guess == number:
+    print("well done")
+
+elif guess > number:
+    print("Too high")
+    guess = int(input("Guess again: "))
+    
+    if guess == number:
+        print("Incorrect")
+
+    else: 
+        print("Youl ose") 
+
+elif guess < number:
+    print("Too low")
+    guess = int(input("Guess again: ")) 
+    if guess == number:
+        print("Incorrect")
+else: 
+    print("Youl ose") 
