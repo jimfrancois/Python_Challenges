@@ -366,3 +366,14 @@ while again == "y":
     total = total + num2
     again = input("Do you want to add another number? (y/n) ")
 print("The total is ", total)
+
+
+#Challenge48
+again = "y"
+count = 0
+while again == "y":
+    name = input("Enter a name of somebody you want to invite to your party: ")
+    print(name, "has now invited")
+    count = count + 1
+    again = input("Do you want to invite somebody else? (y/n) ")
+print("You have", count, "people coming to your party")
