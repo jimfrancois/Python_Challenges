@@ -377,3 +377,17 @@ while again == "y":
     count = count + 1
     again = input("Do you want to invite somebody else? (y/n) ")
 print("You have", count, "people coming to your party")
+
+
+#Challenge49
+compnum = 50
+usr = int(input("Can you guess the number I am thinking of? "))
+count = 1
+while usr != compnum:
+    if usr < compnum:
+        print("Too low")
+    else:
+        print("Too high")
+    count = count + 1
+    usr = int(input("Have another guess: "))
+print("Well done, you took", count, "attempts")
