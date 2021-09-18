@@ -765,3 +765,12 @@ dislike = int(input("Which of these do you want to get rid of? "))
 
 del food_dictionary[dislike]
 print(sorted(food_dictionary.values()))
+
+#Challenge74
+colours = ["red", "blue", "yellow", "green", "pink", "orange"]
+start = int(input("Enter a starting number (0-4): "))
+
+end = int(input("Enter an end number (5-9): "))
+
+print(colours[start:end])
+
