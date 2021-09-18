@@ -499,6 +499,21 @@ while correct == False:
 
     elif guess > num:
         print("Too high")
-        
+
     else:
         print("Too low")         
+
+
+ #Challenge58
+score = 0
+for i in range(1, 6):
+    numb1 = random.randint(1, 50) 
+    numb2 = random.randint(1, 50) 
+    correct = numb1 + numb2
+    print(numb1, "+", numb2, "=")
+
+    answr = int(input("Your answer: "))
+    print() 
+    if answer == correct:
+        score = score + 1
+print("You scored", score, "out of 5")        
