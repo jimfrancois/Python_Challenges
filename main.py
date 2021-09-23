@@ -990,4 +990,43 @@ while len(numbers) < 5:
     else:
         print("Outside the range")
 for i in numbers:
-    print(i)    
+    print(i) 
+
+
+#Challenge91
+       
+numbers = array('i', [6,8,3,7,8])
+
+for i in numbers:
+    print(i)
+
+    number = int(input("Enter a number: "))
+    if numbers.count(number) == 1:
+        print(number, "is in the list once")
+    else:
+        print(number, "is in the list", numbers.count(number),"times")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
