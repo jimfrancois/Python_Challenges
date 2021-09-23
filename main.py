@@ -965,4 +965,16 @@ for i in range(0, 5):
 
 numbers = sorted(numbers)
 numbers.reverse()
-print(numbers)    
+print(numbers) 
+
+
+#Challenge89
+
+numbers = array('i', [])
+
+for i in range(0, 5):
+    number = random.randint(1, 100)
+    numbers.append(number)
+
+for i in numbers:
+    print(i)
