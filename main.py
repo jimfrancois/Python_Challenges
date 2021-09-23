@@ -915,4 +915,16 @@ else:
 #Challenge84
 postcode = input("Enter your postcode: ")
 start = postcode[0:2]
-print(start.upper())    
+print(start.upper())   
+
+
+#Challenge85
+
+name = input("Enter your name: ")
+count = 0
+name = name.lower()
+
+for y in name: 
+    if y == "a" or x == "e" or x == "i" or x == "o" or x == "u":
+        count = count + 1
+print("Vowels =", count)        
