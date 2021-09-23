@@ -978,3 +978,16 @@ for i in range(0, 5):
 
 for i in numbers:
     print(i)
+
+
+#Challenge90
+
+numbers = array('i', [])
+while len(numbers) < 5:
+    number = int(input("Enter a number between 10 and 20: "))
+    if number >= 10 and number <= 20:
+        numbers.append(number)
+    else:
+        print("Outside the range")
+for i in numbers:
+    print(i)    
