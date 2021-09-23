@@ -1,6 +1,7 @@
 import math
 import random
 from typing import Pattern
+from array import *
 
 #Challenge01
 fname = input("What is your first name? ")
@@ -953,3 +954,15 @@ for x in user_word:
     letter = user_word[position]
     print(letter)
     number = number + 1
+
+
+#Challenge88
+numbers = array('i', [])
+
+for i in range(0, 5):
+    number = int(input("Enter a number: "))
+    numbers.append(number)
+
+numbers = sorted(numbers)
+numbers.reverse()
+print(numbers)    
