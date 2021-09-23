@@ -941,3 +941,15 @@ elif new_password.lower() == confirm_password.lower():
 
 else:
     print("Incorrect")
+
+
+#Challenge87
+
+user_word = input("Please enter a word: ")
+length = len(user_word)
+number = 1
+for x in user_word:
+    position = length - number
+    letter = user_word[position]
+    print(letter)
+    number = number + 1
