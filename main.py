@@ -927,4 +927,17 @@ name = name.lower()
 for y in name: 
     if y == "a" or x == "e" or x == "i" or x == "o" or x == "u":
         count = count + 1
-print("Vowels =", count)        
+print("Vowels =", count)    
+
+#Challenge86
+new_password = input("Enter a new password: ")
+confirm_password = input("re-enter the password again: ")
+
+if new_password == confirm_password:
+    print("Thank you")
+
+elif new_password.lower() == confirm_password.lower():
+    print("They must be in the same case")
+
+else:
+    print("Incorrect")
