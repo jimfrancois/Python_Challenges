@@ -1007,6 +1007,23 @@ for i in numbers:
         print(number, "is in the list", numbers.count(number),"times")
 
 
+#Challenge92
+
+num1 = array('i', [])
+num2 = array('i', [])
+
+for i in range(0, 3):
+    num = random.randint(1, 100)
+    num2.append(num)
+
+num1.extend(num2)
+
+num1 = sorted(num1)
+
+for i in num1:
+    print(i)
+
+
 
 
 
