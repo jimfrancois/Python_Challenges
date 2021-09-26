@@ -1085,6 +1085,12 @@ for i in range(0, 5):
     print(round(ans, 2))
 
 
+#Challenge96
+my_list = [[2, 5, 8], [3, 7, 4], [1, 6, 9], [4, 2, 0]] 
+
+
+
+
 
 
 
