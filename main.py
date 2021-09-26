@@ -1105,6 +1105,22 @@ my_list[row].append(newvalue)
 print(my_list[row])
 
 
+#Challenge99
+
+my_list = [[2, 5, 8], [3, 7, 4], [1, 6, 9], [4, 2, 0]]
+
+row = int(input("Which row would you like to display? "))
+print(my_list[row])
+
+col = int(input("Which column would you like to display in that row? "))
+print(my_list[row][col])
+
+change_value = input("Do you want to change the value (y/n): ")
+if change_value == 'y':
+    new_value = int(input("Enter a new value: "))
+    my_list[row][col] = new_value
+print(list[row])
+
 
 
 
