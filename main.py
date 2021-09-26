@@ -1068,7 +1068,21 @@ while tryagain == True:
             num = int(input("Select one of the numbers: "))     
 
 
+#Challenge95
 
+nums = array('f', [34, 27, 99.58, 45, 28.65])
+tryagain = True
+
+while tryagain == True:
+    num = int(input("Enter a number between 2 and 5: "))
+    if num < 2 or num > 5:
+        print("Incorrect value, try again.")
+    else:
+        tryagain = False
+
+for i in range(0, 5):
+    ans = nums[i] / num
+    print(round(ans, 2))
 
 
 
