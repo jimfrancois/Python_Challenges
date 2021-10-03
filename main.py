@@ -1204,7 +1204,6 @@ file.close()
 
 
 #Challenge106
-
 file = open("Names.txt", 'w')
 file.write("Jim, ")
 file.write("Kendy, ")
@@ -1214,7 +1213,10 @@ file.write("Noah")
 file.close()
 
 
-
+#Challenge107
+file = open("Names.txt", "r")
+print(file.read())
+file.close()
 
 
 
