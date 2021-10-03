@@ -1176,7 +1176,23 @@ for name in list:
     print((name), list[name]["Age"])
 
 
+#Challenge104
 
+list = {}
+for i in range(0, 4):
+    name = input("Enter a name: ")
+    age = int(input("What is your age? "))
+    shoe_size = int(input("Enter a size: "))
+    list[name] = {"Age": age, "Shoe_Size": shoe_size}
+
+getrid = input("Enter the name of the person you want to remove: ")
+del list[getrid]
+
+for name in list:
+    print((name), list[name]["Age"], list[name]["Shoe_Size"])
+
+
+    
 
 
 
