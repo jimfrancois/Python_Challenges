@@ -1202,7 +1202,6 @@ file.write("20, ")
 file.write("87")
 file.close()   
 
-
 #Challenge106
 file = open("Names.txt", 'w')
 file.write("Jim, ")
@@ -1212,8 +1211,16 @@ file.write("Valery, ")
 file.write("Noah")
 file.close()
 
-
 #Challenge107
+file = open("Names.txt", "r")
+print(file.read())
+file.close()
+
+#Challenge108
+file = open("Names.txt", "a")
+file.write(input("Enter another name: " + "\n"))
+file.close()
+
 file = open("Names.txt", "r")
 print(file.read())
 file.close()
