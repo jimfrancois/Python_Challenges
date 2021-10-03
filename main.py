@@ -1095,8 +1095,14 @@ row = int(input("Select a row: "))
 col = int(input("Selcet a column: "))
 print(my_list[row][col])
 
+#Challenge98
+my_list = [[2, 5, 8], [3, 7, 4], [1, 6, 9], [4, 2, 0]]
+row = int(input("Which row would you like to display? "))
+print(my_list[row])
 
-
+newvalue = int(input("Enter a new value: "))
+my_list[row].append(newvalue)
+print(my_list[row])
 
 
 
