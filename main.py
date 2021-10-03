@@ -1428,3 +1428,20 @@ file = open("QuizScore.csv", "a")
 newrecord = name + "," + question1 + "," + str(ans1) + "," + question2 + "," + str(ans2) + "," + str(score) + "\n"
 file.write(str(newrecord))
 file.close()
+
+#Challenge118
+def ask_value():
+    num = int(input("Enter a number: "))
+    return num
+
+def count(num):
+    n = 1
+    while n <= num:
+        print(n)
+        n = n + 1
+        
+def main():
+    num = ask_value()
+    count(num)
+    
+main() 
