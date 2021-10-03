@@ -2,6 +2,7 @@ import math
 import random
 from typing import Pattern
 from array import *
+import csv
 
 #Challenge01
 fname = input("What is your first name? ")
@@ -1270,4 +1271,21 @@ for row in file:
         file.close()
 file.close()
 
+#Challenge111
 
+file = open("Books.csv", "w")
+newrecord = "To kill A Mockingbird, Harper lee, 1960\n"
+file.write(str(newrecord))
+
+newrecord = "A Bried History of time, Stephen HHawking, 1988\n"
+file.write(str(newrecord))
+
+newrecord = "The Great Gatsby, F. Scott Fitzgerald, 1922\n"
+file.write(str(newrecord))
+
+newrecord = "The Man who Mistook His wife for a Hat, Oliver Sacks, 1985\n"
+file.write(str(newrecord))
+
+newrecord = "Pride and prejudice, Jane Austen, 1813\n"
+file.write(str(newrecord))
+file.close()
