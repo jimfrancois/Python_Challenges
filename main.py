@@ -1163,6 +1163,17 @@ user = input("Enter the name of one of the people: ")
 print(list[user])
 
 
+#Challenge103
+
+list = {}
+for i in range(0, 4):
+    name = input("Please feel free to enter a name: ")
+    age = int(input("What is your age? "))
+    shoe_size = int(input("Enter a size: "))
+    list[name] = {"Age": age, "Shoe_Size": shoe_size}
+
+for name in list:
+    print((name), list[name]["Age"])
 
 
 
