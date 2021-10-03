@@ -1203,6 +1203,17 @@ file.write("87")
 file.close()   
 
 
+#Challenge106
+
+file = open("Names.txt", 'w')
+file.write("Jim, ")
+file.write("Kendy, ")
+file.write("Sam, ")
+file.write("Valery, ")
+file.write("Noah")
+file.close()
+
+
 
 
 
