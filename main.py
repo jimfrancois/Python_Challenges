@@ -1289,3 +1289,19 @@ file.write(str(newrecord))
 newrecord = "Pride and prejudice, Jane Austen, 1813\n"
 file.write(str(newrecord))
 file.close()
+
+#Challenge112
+
+file = open("books.csv", "a")
+title = input("Enter a title: ")
+author = input("Enter an author: ")
+year = input("Enter the year it was released: ")
+
+newrecord = title + "," + author + "," + year + "\n"
+file.write(str(newrecord))
+file.close()
+
+file = open("Books.csv", "r")
+for row in file:
+    print(row)
+file.close()
