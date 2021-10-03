@@ -1192,7 +1192,15 @@ for name in list:
     print((name), list[name]["Age"], list[name]["Shoe_Size"])
 
 
-    
+#Challenge105
+
+file = open("Numbers.txt", 'w')
+file.write("5, ")
+file.write("7, ")
+file.write("12, ")
+file.write("20, ")
+file.write("87")
+file.close()   
 
 
 
