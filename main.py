@@ -1088,7 +1088,12 @@ for i in range(0, 5):
 #Challenge96
 my_list = [[2, 5, 8], [3, 7, 4], [1, 6, 9], [4, 2, 0]] 
 
+#Challenge97
+my_list = [[2, 5, 8], [3, 7, 4], [1, 6, 9], [4, 2, 0]]
 
+row = int(input("Select a row: "))
+col = int(input("Selcet a column: "))
+print(my_list[row][col])
 
 
 
