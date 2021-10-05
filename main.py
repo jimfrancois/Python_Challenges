@@ -1586,3 +1586,42 @@ def main():
             
 names = []
 main()
+
+
+#Challenge122
+
+
+def addtofile():
+    file = open("Salaries.csv", "a")
+    name = input("Enter a name: ")
+    salary = int(input("Enter Salary: "))
+    newrecord = name + ", " + str(salary) + "\n"
+    file.write(str(newrecord))
+    file.close()
+    
+def viewrecords():
+    file = open("Salaries.csv", "r")
+    for row in file:
+        print(row)
+    file.close() 
+    
+    
+tryagain =  True
+while tryagain == True:
+    print("1) Add to file")
+    print("2) View all records")
+    print("3) Quit program")
+    print()
+    
+    selection = input("Enter the number of your selection: ")
+    if selection == 1:
+        addtofile()
+    
+    elif selection == 2:
+        viewrecords()
+        
+    elif selection == 3:
+        tryagain = False
+        
+    else:
+        print("Incorrect option")
