@@ -2,6 +2,7 @@ import math
 import random
 from typing import Pattern
 from array import *
+import csv
 
 #Challenge01
 fname = input("What is your first name? ")
@@ -1131,17 +1132,348 @@ sales = {
 }
 
 
+#Challenge101
 
 
+sales = {
+    "John": {"N": 3056, "S": 8463, "E": 8441, "W": 2694},
+    "Tom": {"N": 4832, "S": 6786, "E": 4737, "W": 3612},
+    "Anne": {"N": 5239, "S": 4802, "E": 5820, "W": 1859},
+    "Fiona": {"N": 3904, "S": 3645, "E": 8821, "W": 2451},
+}
+
+person_name = input("Enter a sales person's name: ")
+region = input("Enter a sales person's region: ")
+print(sales[person_name][region])
+
+new_data = int(input("Enter new data: "))
+sales[person_name][region] = new_data
+print(sales[person_name])
 
 
+#Challenge102
+
+list = {}
+for i in range(0, 4):
+    name = input("Please feel free to enter a name: ")
+    age = int(input("What is your age? "))
+    shoe_size = int(input("Enter a size: "))
+    list[name] = {"Age": age, "Shoe_size": shoe_size}
+
+user = input("Enter the name of one of the people: ")
+print(list[user])
 
 
+#Challenge103
+
+list = {}
+for i in range(0, 4):
+    name = input("Please feel free to enter a name: ")
+    age = int(input("What is your age? "))
+    shoe_size = int(input("Enter a size: "))
+    list[name] = {"Age": age, "Shoe_Size": shoe_size}
+
+for name in list:
+    print((name), list[name]["Age"])
 
 
+#Challenge104
+
+list = {}
+for i in range(0, 4):
+    name = input("Enter a name: ")
+    age = int(input("What is your age? "))
+    shoe_size = int(input("Enter a size: "))
+    list[name] = {"Age": age, "Shoe_Size": shoe_size}
+
+getrid = input("Enter the name of the person you want to remove: ")
+del list[getrid]
+
+for name in list:
+    print((name), list[name]["Age"], list[name]["Shoe_Size"])
 
 
+#Challenge105
+
+file = open("Numbers.txt", 'w')
+file.write("5, ")
+file.write("7, ")
+file.write("12, ")
+file.write("20, ")
+file.write("87")
+file.close()   
+
+#Challenge106
+file = open("Names.txt", 'w')
+file.write("Jim, ")
+file.write("Kendy, ")
+file.write("Sam, ")
+file.write("Valery, ")
+file.write("Noah")
+file.close()
+
+#Challenge107
+file = open("Names.txt", "r")
+print(file.read())
+file.close()
+
+#Challenge108
+file = open("Names.txt", "a")
+file.write(input("Enter another name: " + "\n"))
+file.close()
+
+file = open("Names.txt", "r")
+print(file.read())
+file.close()
+
+#Challenge109
+print("1) Create a new file")
+print("2) Display the file")
+print("3)Add a new item to the file")
+
+choose = int(input("Make a selection 1, 2 or 3: "))
+if choose == 1:
+    subject = input("Enter a school subject: ")
+    file = open("Subject.txt", "w")
+    file.write(subject + "\n")
+    file.close()
+
+elif choose == 2:
+    file = open("Subject.txt", "r")
+    print(file.read())
+
+elif choose == 3:
+    file = open("Subject.txt", "a")
+    subject = input("Enter a school subject: ")
+    file.write(subject + "\n")
+    file.close()
+    file = open("Subject.txt", "r")
+    print(file.read())
+
+else:
+    print("Invalid option")
 
 
+#Challenge110
+file = open("Names.txt", "r")
+print(file.read())
+file.close()
+
+file = open("Names.txt", "r")
+selectedname = input("Enter  name from the list: ")
+selectedname = selectedname + "\n"
+
+for row in file:
+    if row != selectedname:
+        file = open("Names2.txt", "a")
+        newrecord = row
+        file.write(newrecord)
+        file.close()
+file.close()
+
+#Challenge111
+
+file = open("Books.csv", "w")
+newrecord = "To kill A Mockingbird, Harper lee, 1960\n"
+file.write(str(newrecord))
+
+newrecord = "A Bried History of time, Stephen HHawking, 1988\n"
+file.write(str(newrecord))
+
+newrecord = "The Great Gatsby, F. Scott Fitzgerald, 1922\n"
+file.write(str(newrecord))
+
+newrecord = "The Man who Mistook His wife for a Hat, Oliver Sacks, 1985\n"
+file.write(str(newrecord))
+
+newrecord = "Pride and prejudice, Jane Austen, 1813\n"
+file.write(str(newrecord))
+file.close()
+
+#Challenge112
+
+file = open("books.csv", "a")
+title = input("Enter a title: ")
+author = input("Enter an author: ")
+year = input("Enter the year it was released: ")
+
+newrecord = title + "," + author + "," + year + "\n"
+file.write(str(newrecord))
+file.close()
+
+file = open("Books.csv", "r")
+for row in file:
+    print(row)
+file.close()
 
 
+#Challenge113
+num = int(input("How many books do you want to add to the list? "))
+file = open("Books.csv", "a")
+
+for x in range(0, num):
+    title = input("Entyer a title: ")
+    author = input("Enter an author: ")
+    year = input("Enter the year it was released: ")
+
+    newrecord = title + "," + author + "," + year + "\n"
+    file.write(str(newrecord))
+file.close()
+
+searchauthor = input("Enter an authors name to search for: ")
+
+file = open("Books.csv", "r")
+count = 0
+
+for row in file:
+    if searchauthor in str(row):
+        print(row)
+        count = count + 1
+if count == 0:
+    print("There are no books by that author in this list.")
+file.close()   
+
+
+#Challenge114
+start =int(input("Enter a starting year: "))
+end = int(input("Enter an end year: "))
+
+file = list(csv.reader(open("Books.csv")))
+tmp = []
+for row in file:
+    tmp.append(row)
+    
+x = 0
+for row in tmp:
+    if int(tmp[x][2]) >= start and int(tmp[x][2]) <= end:
+        print(tmp[x])
+    x = x + 1   
+
+
+ #Challenge115
+file = open("Books.csv", "r")
+x = 0
+
+for row in file:
+    display = "Row: " + str(x) + " - " + row
+    print(display)
+    x = x + 1   
+
+#Challenge116
+file = list(csv.reader(open("Books.csv")))
+Booklist = []
+
+for row in file:
+    Booklist.append(row)
+    
+x = 0
+for row in Booklist:
+    display = x, Booklist[x]
+    print(display)
+    x = x + 1
+getrid = int(input("Enter a row number to delete: "))
+del Booklist[getrid]
+
+
+x = 0
+for row in Booklist:
+    display = x, Booklist[x]
+    print(display)
+    x = x + 1
+alter = int(input("Enter a row number to alter: "))
+
+
+x = 0
+for row in Booklist[alter]:
+    display = x, Booklist[alter][x]
+    print(display)
+    x = x + 1
+part = int(input("Which part do you want to change? "))
+newdata = input("Enter new data: ")
+Booklist[alter][part] = newdata
+print(Booklist[alter])
+
+file = open("Books.csv", "w")
+x = 0
+for row in Booklist:
+    newrecord = Booklist[x][0] + ", " + Booklist[1] + ", " + Booklist[x][2] + "\n"
+    file.write(newrecord)
+    x = x + 1
+file.close()  
+
+
+#Challenge117
+
+score = 0
+name = input("What is your name: ")
+q1_num1 = random.randint(10, 50)
+q1_num2 = random.randint(10, 50)
+question1 = str(q1_num1) + " + " + str(q1_num2) + " = "
+ans1 = int(input(question1))
+realans1 = q1_num1 + q1_num2
+
+if ans1 == realans1:
+    score = score + 1
+    
+q2_num1 = random.randint(10, 50)    
+q2_num2 = random.randint(10, 50) 
+question2 = str(q2_num1) + " + " + str(q2_num2) + " = "
+ans2 = int(input(question2))
+realans2 = q2_num1 + q2_num2
+
+if ans2 == realans2:
+    score = score + 1
+    
+file = open("QuizScore.csv", "a") 
+newrecord = name + "," + question1 + "," + str(ans1) + "," + question2 + "," + str(ans2) + "," + str(score) + "\n"
+file.write(str(newrecord))
+file.close()
+
+#Challenge118
+def ask_value():
+    num = int(input("Enter a number: "))
+    return num
+
+def count(num):
+    n = 1
+    while n <= num:
+        print(n)
+        n = n + 1
+        
+def main():
+    num = ask_value()
+    count(num)
+    
+main() 
+
+#Challenge119
+def pick_num():
+    low = int(input("Enter the bottom of the range: "))
+    high = int(input("Enter the top of the range: "))
+    comp_num = random.randint(low, high)
+    return comp_num
+
+def first_guess():
+    print("I am thinking of a number...")
+    guess = int(input("What am i thonking of:"))
+    return guess
+
+def check_answer(comp_num, guess):
+    try_again = True
+    while try_again == True:
+        if comp_num == guess:
+            print("Correct, you win.")
+            try_again = False
+        
+        elif comp_num > guess:
+            guess = int(input("Too low, try again: "))
+            
+        else:
+            guess =int(input("Too high, try again: "))
+    
+def main():
+    comp_num = pick_num()
+    guess = first_guess()
+    check_answer(comp_num, guess)
+    
+main()    
